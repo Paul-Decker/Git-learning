@@ -4,7 +4,7 @@
 
 [下载地址](https://git-scm.com/download)
 
-<img src="./assets/Git的安装与卸载/Git的安装与卸载/Untitled.png" style="float: left">
+<img src="./assets/Git的安装与卸载/Untitled.png" style="float: left">
 
 <img src="./assets/Git的安装与卸载/Untitled 1.png" style="float: left">
 
