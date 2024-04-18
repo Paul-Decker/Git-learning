@@ -52,7 +52,6 @@ Git 工作区、暂存区和版本库概念：
     💡 commit指令不需要带上文件名，会将暂存区的所有文件都提交到本地仓库
     `-m "注释内容"`：message，表示本次提交的版本信息，用于区别其他版本，方便回滚时找到合适的版本
     
-    
 - 实例
   
     <img src="./assets/Git常用指令/Untitled%204.png" style="float: left">
@@ -77,8 +76,10 @@ Git 工作区、暂存区和版本库概念：
 ### 版本回退（reset、reflog）
 
 - 作用：版本切换
-- 命令形式：`git reset --hard commitID`
+- 命令形式：`git reset [--soft | --mixed | --hard] commitID`
     - commitID可以使用`git log`查看
+    - --mixed 为默认，可以不用带该参数，用于重置暂存区的文件与上一次的提交(commit)保持一致，工作区文件内容保持不变
+    - --hard 参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交
 - 实例
   
     <img src="./assets/Git常用指令/Untitled%206.png" style="float: left">
